@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SRINARAYANA </title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        section {
+            margin: 80px 0px;
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 700;
+            text-align: center;
+            color: #440605;
+        }
+
+        .btn-primary {
+            background-color: #F98228 !important;
+            border: none !important;
+        }
+
+        .info {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .phone_number {
+            padding-right: 24px;
+        }
+
+        .top-header .btn {
+            border-radius: 24px;
+            padding: 8px 24px;
+        }
+
+        .hero .col-md-8 {
+            display: grid;
+            align-content: center;
+        }
+
+        .hero .hero-logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 48px;
+        }
+
+        .hero .hero-logo .alt {
+            font-size: 55px;
+            color: #43070B;
+            font-weight: 700;
+            padding-right: 19%;
+        }
+
+        .hero .hero-title {
+            text-align: center;
+        }
+
+        .hero .hero-title h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #F98228;
+        }
+
+        .hero .hero-title p,
+        .hero-dsc {
+            font-size: 32px;
+            font-weight: 600;
+            color: #F98228;
+        }
+
+        .hero .hero-title .hero-dsc {
+            color: black;
+        }
+
+        .hero .col-md-4 {
+            background: #F98228;
+            padding: 40px 40px 10px 40px;
+            border-radius: 15px;
+            box-shadow: 13px 14px 18px 6px #0000003b;
+        }
+
+        .hero .form-btn {
+            text-align: center;
+            padding-top: 14px;
+        }
+
+        .hero .form-title {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            color: #43070B;
+            text-align: center;
+        }
+
+        .form-btn .btn {
+            background-color: #440505 !important;
+        }
+
+        .form-label {
+            color: #fff;
+        }
+
+        .far {
+            color: #f98228;
+        }
+
+        .score {
+            background-image: url('img/score-bg.png');
+            background-position: top;
+            background-repeat: no-repeat;
+            padding-bottom: 250px;
+        }
+        
+        .score .score-title {
+            padding-top: 10rem;
+            font-size: 28px;
+            font-weight: 500;
+            color: #43070B;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .score .score-title h2 {
+            font-size: 32px;
+            margin-bottom: 0px;
+        }
+
+        .score .score-card {
+            padding: 40px 0px;
+        }
+        .score .score-card .col{
+            display: flex;
+            justify-content: center;
+        }
+        .score .card {
+            width: 350px;
+            border-radius: 15px;
+        }
+
+        .score .card .card-body {
+            padding: 1rem 0rem 0rem;
+            text-align: center;
+        }
+
+        .score .card .card-img-top {
+            padding: 20px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .score .card p.card-text {
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .score .score-cardfooter {
+            background: #D85F37;
+            padding: 8px;
+            font-size: 12px;
+            margin-top: 8px;
+            border-radius: 0px 0px 15px 15px;
+        }
+
+        .score .card-title {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .score .btn-primary {
+            background-color: #440605 !important;
+        }
+
+        .score .goal {
+            background: #D85F37;
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .score .our-goal {
+            text-align: center;
+        }
+
+        .score .our-goal h5 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .dream .make-dream h2 {
+            font-size: 60px;
+            padding-bottom: 80px;
+            font-weight: bold;
+        }
+
+        .dream .make-dream {
+            display: grid;
+            justify-items: center;
+        }
+
+        .dream .card-title {
+            color: #FF7A06;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .dream .card-text {
+            color: #fff;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .dream .row {
+            background: #440505;
+            border-radius: 15px;
+            padding: 20px 70px 50px;
+            height: 17rem;
+            width: 60rem;
+            margin: auto;
+        }
+
+        .dream .dream-image {
+            position: relative;
+        }
+
+        .dream .dream-image img {
+            position: absolute;
+            bottom: -12%;
+            right: 10%;
+        }
+
+        .dream .mb-3 {
+            padding-bottom: 5rem !important;
+        }
+
+        .dream .card {
+            border: none;
+        }
+
+        .dream .dream-alt .row {
+            flex-direction: row-reverse;
+        }
+
+        .dream .dream-alt .dream-image img {
+            left: 10%;
+        }
+        .years{
+            background-image: url('img/score-bg.png');
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        .years .container{
+            padding-top: 12%;
+            padding-bottom: 7%;
+        }
+        .years .col-md-6{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .years .over-years{
+            background: #44070E;
+            color: #fff;
+            padding: 50px;
+            align-items: center;
+            align-content: center;
+            display: grid;
+            font-size: 34px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .years .over-years h2{
+            color: #fff;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: left;
+        }
+        .years .over-years p{
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .years-txt{
+            color:#D85F37;
+        }
+        .guideline .card{
+            align-items: center;
+            background: linear-gradient(180deg, #943b06, #0e0102);
+            padding:40px 0px 0px;
+            border-radius: 15px;
+        }
+        .guideline .card-title{
+            color: #fff;
+            font-size: 14px;
+        }
+        .guideline .card-body{
+            text-align: center;
+        }
+        .guideline .row-guide{
+          padding: 80px 0px; 
+        }
+        .guideline .rowCta{
+            background:linear-gradient(180deg, #943b06, #4d1f03);
+            padding: 60px;
+            margin: 60px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .guideline .rowCta h3{
+            font-size: 48px;
+            font-weight: bold;
+            padding-bottom: 16px;
+            color: #fff;
+        }
+        .guideline .rowCta .btn-primary{
+            padding: 12px 40px;
+        }
+        .faq{
+            background: linear-gradient(180deg, #fedc95, #fff);
+            background-image: url('img/score-bg.png');
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        .faq .container{
+            padding-top: 12%;
+            padding-bottom: 80px;
+
+        }
+        .faq .container .faq-title{
+            padding-bottom: 40px;
+        }
+        .faq .container .row{
+            padding-bottom: 200px;
+        }
+        .faq .svgBck{
+            background-image: url(img/svg.png);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 13rem;
+        }
+        .faq .accordion-button{
+            border-radius: 15px 15px 0px 0px!important;
+        }
+        .faq .accordion-item{
+            background: transparent;
+            border: none;
+        }
+        .faq .accordion-button:not(.collapsed), .faq .accordion-button, .accordion-body{
+            color: #fff;
+            background-color: #44070B;
+            padding: 40px;
+            border-radius: 0px 0px 15px 15px;
+        }
+        .faq button.accordion-button{
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .faq .accordion-item{
+            margin-bottom: 2rem;
+        }
+        .faq .accordion-header .collapsed{
+            border-radius: 15px 15px 15px 15px !important;
+        }
+        .footer{
+            margin-top: 0px;
+        }
+        .footer .row{
+            background:#44070B;
+            padding: 60px;
+            margin: -300px 120px 0px;
+            color:#fff;
+            text-align: center;
+            border-radius: 15px;
+        }
+        .footer h3{
+            font-size: 40px;
+            font-weight: bold;
+            padding: 20px;
+            width: 630px;
+            margin: auto;;
+        }
+        .footer .btn-primary{
+        font-size: 22px;
+        font-weight: bold;
+        padding: 12px 36px;
+        }
+        .copyright{
+            background: #000;
+            color: #fff;
+            padding: 160px 0px 60px 0px;
+            margin: 0px;
+        }
+        .cpy{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .footer {
+           margin-bottom: -100px;
+            position: relative;
+        }
+    </style>
+
+<body>
+    <div class="">
+        <section class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="info flex-end">
+                            <span class="phone_number"><i class="far fa-phone-alt"></i> 09618341016</span>
+                            <span class="btn btn-primary">Let's have a chat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="hero-logo">
+                            <img src="img/logo.png" alt="logo">
+                            <span class="alt">SRINARAYANA</span>
+                        </div>
+                        <div class="hero-title">
+                            <h1>Master the competitive exams</h1>
+                            <p>with the comprehensive</p>
+                            <span class="hero-dsc">One-year repeater / Long-term course.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <form>
+                            <div class="mb-3 form-title">
+                                <span>Making your success journey easier with our course</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="studentName" class="form-label">Student Name</label>
+                                <input type="text" class="form-control" id="studentName" aria-describedby="studentName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactNumber" class="form-label">Contact Number</label>
+                                <input type="text" class="form-control" id="contactNumber"
+                                    aria-describedby="numberHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="cityName" class="form-label">City</label>
+                                <input type="text" class="form-control" id="cityName" aria-describedby="cityHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="stateName" class="form-label">State</label>
+                                <input type="text" class="form-control" id="stateName" aria-describedby="stateHelp">
+                            </div>
+                            <div class="mb-3 form-btn">
+                                <button type="submit" class="btn btn-primary">Submit Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="score">
+            <div class="container">
+                <div class="score-title">
+                    <h2>Top Scorers who have showcased</h2>
+                    <span>wonderful performances the exams</span>
+                </div>
+                <div class="score-card">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/Rectangle 158.png" class="card-img-top" alt="Kavitha">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kavitha Singh</h5>
+                                    <span class="place">Hyderabad</span>
+                                    <div class="score-cardfooter">
+                                        <p class="card-text">AIR-023</p>
+                                        <span class="jee">JEE Advanced 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/Rectangle 159.png" class="card-img-top" alt="Jishnu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jishnu Kumar</h5>
+                                    <span class="place">Hyderabad</span>
+                                    <div class="score-cardfooter">
+                                        <p class="card-text">AIR-60</p>
+                                        <span class="jee">JEE Advanced 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/Rectangle -10.png" class="card-img-top" alt="Kavitha Konmkar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kavitha Konkar</h5>
+                                    <span class="place">Hyderabad</span>
+                                    <div class="score-cardfooter">
+                                        <p class="card-text">AIR-75</p>
+                                        <span class="jee">JEE Advanced 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/Rectangle -2.png" class="card-img-top" alt="Savitha">
+                                <div class="card-body">
+                                    <h5 class="card-title">Savita Singh</h5>
+                                    <span class="place">Hyderabad</span>
+                                    <div class="score-cardfooter">
+                                        <p class="card-text">AIR-53</p>
+                                        <span class="jee">JEE Advanced 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/Rectangle -5.png" class="card-img-top" alt="Chinnala">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chinnala Sai Ameya</h5>
+                                    <span class="place">Hyderabad</span>
+                                    <div class="score-cardfooter">
+                                        <p class="card-text">AIR-854</p>
+                                        <span class="jee">JEE Advanced 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <img src="img/Rectangle -13.png" class="card-img-top" alt="Jaka">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jaka Narayan Varun</h5>
+                                    <span class="place">Hyderabad</span>
+                                    <div class="score-cardfooter">
+                                        <p class="card-text">AIR-65</p>
+                                        <span class="jee">JEE Advanced 2020</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row goal">
+                    <div class="col">
+                        <div class="our-goal">
+                            <h5>Our goal is to facilitate All India top ranks in IIT, NIT, BIT, SAT, VIT, SRM
+                                and DEEMED University entrance exams.</h5>
+                            <span class="btn btn-primary"> Get Counslling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="dream">
+            <div class="container">
+                <div class="make-dream">
+                    <h2>Make your dream a reality.</h2>
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-md-6 dream-image">
+                                <img src="img/1.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Experienced Faculty:</h5>
+                                    <p class="card-text">Our faculties help you crack the exam
+                                        and enrich your learning experience. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 dream-alt">
+                        <div class="row">
+                            <div class="col-md-6 dream-image">
+                                <img src="img/2.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Doubt Solving Sessions:</h5>
+                                    <p class="card-text">Clarifying queries of the students through live
+                                        sessions. Interaction through in-person classes
+                                        can help the students to understand
+                                        the concepts better.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-md-6 dream-image">
+                                <img src="img/3.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Planned Syllabus:</h5>
+                                    <p class="card-text">Well-structure syllabus to plan your studies
+                                        accordingly. Students can follow the syllabus
+                                        which is designed in a comfortable, easy
+                                        and structured manner.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 dream-alt">
+                        <div class="row">
+                            <div class="col-md-6 dream-image">
+                                <img src="img/4.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">In-depth explanation
+                                        of concepts:</h5>
+                                    <p class="card-text">Accurate and systematic classes with focus
+                                        on in-depth learning. Long-term learning is
+                                        our focus and getting a grasp of subjects
+                                        can help the students in their future.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="row">
+                            <div class="col-md-6 dream-image">
+                                <img src="img/5.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Student Monitoring:
+                                    </h5>
+                                    <p class="card-text">Evaluating students’ performance with regular
+                                        tests and assessments. Understanding the
+                                        students shortcomings and working
+                                        towards building their future.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 dream-alt">
+                        <div class="row">
+                            <div class="col-md-6 dream-image">
+                                <img src="img/6.png" class="img-fluid rounded-start" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Comprehensive Study
+                                        Material:</h5>
+                                    <p class="card-text">Exclusive study materials to help you learn better
+                                        which are prepared by our expert faculty.
+                                        We encourage paper discussions based
+                                        on the assessments for imparting
+                                        knowledge to the students.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="years">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="years-image">
+                        <img src="img/years.png" alt="years image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="over-years">
+                        <h2><span class="years-txt">Over </span>15 years</h2>
+                        <span class="years-txt">of experience</span>
+                        <p>Enriched thousands of students' lives
+                            and trained many towards the path
+                            of success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="guideline">
+            <div class="container">
+            <h2>Our Guiding Principles</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 row-guide">
+                <div class="col-md-3">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="156" viewBox="0 0 100 156">
+                            <defs>
+                              <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 54 84">
+                                <image width="54" height="84" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAABUCAYAAADJecSMAAANDElEQVR4nN2be7RVRR3HP/fcC4pS8dIuXU1Ekq2iiJkoRiCGqSgwPhNT2WmQjyQla5VhvivFF77RnJWvZVFsDFFUfCCKKIry0hHUIEgREBEECeXSH78Z9pxzz95nn3vOXWnftfY6s2fPnpnfnpnf+9R0nzicKmM74CCgN9AH2BnoAOwE1ACrgDXASmAW8BIwyyi9qZqTqKkiYQcApwInAw1lvrsCmADcZ5SeXY3JVIOwnsDlwOAiz1YBS4BlwMdADmgL7ALsjqxmIaYCl1RKYCWE1QBXAr8pqJ8N/AN4BpgDfJrw/nbIKvcHhiLb18cNwK+N0v9p1uSaSdhuyOT38+oeB8YC08rpyCgNQBCF/YDRwLHe40XAEKO0KXeCuXJfAL4LzCMm6h07mSMpkygfRunpRunBwBHAG7Z6T2BuEIVHlNtfuYT1BWYAX7X39wF7A4+UO3ASjNJPAj2Au2xVa+DxIAp/UE4/5RDWhfwVuQw4HdhczoBZYJTeapQeAfzSq54aROHeWfvISlhr4Hn7C3AJcGnWQZoLo/S1wIVe1fQgCttmeTcrYXcSy6Y/AVdkn15lMErfANxsbzsB92Z5Lwth3wGGu3GAs8qdXKUwSp+PiA4AFUThwFLvZCHM/0LHN2diVcJJXvnPpRqXkmP9EUELcD9wWkrbocBxQCtgS6mBC5Cz70wxSj+U1CiIwtuAs+2tMkpPSmpbirDHEPkE8A3g/YR2rYFmaQhF0M4o/XGxB0EUdkL0ylrgRaN0n6RO0rbi6cRETSaZKIDPgTsQjf1DREcs5/oQWI1s+41JgxilVyPKMsAhQRT+NKltsRXrCdwOHOLVnQD8PYWwZsOpVFkRROHRwBSv6hXgPKP0S367whU7GniNfKK2INpGGtoCO5Q1wyIIorBNBjk1DVjv3R8IzAqi8GS/kb9ivYhZKghBtbbu2wmDtEY41EDkI23NMP801ACNwAvAKUbpotsyiMKngAHIEajzHvUzSj8H8YrlyF/e64G3bXlxykS2B34IdATaI5ZyJVd729dgYn20GJySvMLO1eHhIAq3x6P2fKCzLV+BqEwj7P3ylAHWAScirH4r5bP5QuTsnKYYpVektHvP/tYbpUcHUfgucAvQDvgVcJnbiksQG2st8tV2Bj6wL/8WuKrCCSeiXOYBEEThOcCt9nZfo/SCIApXAF9HuGt9DtgXIQpiLaOH10+lq9AS8OfU1f46M6cT0DsH7O81mm5/V3t1n7fM3CqCbyq5nfW8V7d/DjmsFDzsmdDJFwWfeeUD7O9zXl2HOmIGsgkYhuiHQxI6+aLAFyu3BVF4DBABnyAytVUdIjdAlNcbinTSWKSuEN9EWG9FqxtEYS3QYJT+V4mmhXM62l7u2DT6mketV55BvFI1KQN0Ap4AliJOnWNKTCgRQRQOsH0sDaLw2SAKO6c0d8xjq52rW8FtwjpHU79fH0Q21VIadyFaB4gTdDKxPMyMIAo7II5Sx537IWZSEhxhNcC55PMEgE9zBRP5OfAi0I1sRuhhRer2K1JXCt2Qo+CjbxCFSbvF34pdjdLzgR97dZ1zxNtnKXCTLbfJOKHHitTNKVJXCm/R1Fx50iidpHv6DG0LgFFaI64LgEE5oLu9ecJr7H+pNOYxEngYUa0MwlFXpbQvCmtY9gfm274eB85IecVXfH3iH7W/3eqIt4AfxvEle9pZW4foiR2Q0FAhWiE++XrEUG1EvF0fIHbUtjFtEGK/IAo7GKWL9eVjO6/sL4Lrr6YO+AjRDX0NxN8WXysxCBQn6iJgFMkhpRWIvnelX5mBKBBZ5eDP1dGwPge8am8OBfaw5XVe4zTzIQmPAteQHierB66wrD1NpBSD3+9GgCAK64Hv27rX6xCGcRTCBf+KGJVvIJp+O0T4loMHbX9u0FuAuQj3rUXMoL2AnyG7oR8SuTm2SU/JcIQ1GqVn2fIEYk/1OGe2TAMOt5UzEbZ/rR10MRL1yIIQuMeW30XEQZIWUW/H3cfeX2CUvjHLIEEUzkTcFwZx5l6ORGkAXjZK93aE7YCw6e7e+x8Tn68GYuMuCTlgA2JVb0a2dZqRCrIjlhJv9x2T3AEeUW0Rr1ZrxPfxFe/xEqCXUXqtE8IbkS04wWvkM42jKI0/IkQBjKE0USDb/Rfe/U1JDT0cSbzlfKIeBg4wSq+F4u63wxCVqhdwsK17AQn4FaIWMUqHEYd8PkLYfyYYpQmicBmikoEQdy+wwCjdRKkOonAq4GJlsxGv2gSjdF7Qsa7wRcSl7dzaUxCt+VDkLCz02o1E3Aa7kI+TKR8nIqociIgYBawIonCsUfo61yiIwq7ERE03SvdP6rCUPnipV76u4NmF5BP1MhAATxbppyMSn74R8UvkwXK2LuQbi/Xkb1NsHw6poaxShM1GuCTIlxrkPftJQdvNCBNq7dXthazqG0jgfBTwJvLB9sFqDUEUtkKEbmESy3BXCKLwUEDZ23lG6afSJp4la2AvYj/eWuRLugBEX0QGtfPav4/kdbQHvlWi73cQDtdAU6E71MajAQiicLnX5qBSeSBZTJM3ibdAO/KV5RkI8/iLV9cZ0Q99opYh4Z+zEPnmsIdt6xM1CehRQNRkr834LMkt5eR5vEasixWLlfVETKCeSMhpoyXiGYQVu21Wi/hUDkfssB0RvXEe4ih91e80iMJbEGMSYJFR2pe1iSjGFZNwBMIVdwJ+hNhsJ3jP59qrFLYAE+2V6jANovBu4Ex7u4FYFyyJcghbhbgNXkU0heOR7LUzEEOxagiicBdEljkLfTPQxyi9LGsf5SawvI1oKO6c9EZWsZAtNxtBFJ6LMCtH1PvAgUbpeeX0U86KObyNnKP7kbNSiyjMI5DIxwPkx69KwkZITkHEge+YmQacapReWe4kK03rOwe4mny9cjXicXoGkYNLybfvQHS8BoQjDkDOr+9U2oSk9l3b3IlVI1+xI3AxomIVi2quQVwB65Ctvz3CNTsWabsJMXuuMkqXsiZSUc0M052RIODvKEMJtliP2FQPGKXTgviZ0ZwzloSVwDhE7emP2EaTkDBPR2Q1tyAcbjmwABEbewKLjdJjm/RYAapJmIPTFZcCF5Ro2xshrOrzaE4iZin4GkbW8aseqmrOl3JR0AbEBHFWcyPivOxi73dFGAo0DWxstVc3e985iMKRtp37IBsQprMcWGiUzhL12YZymMcJSK5UX5oaly2N5cDTwGSj9N+yvJCFsBGI4EzK7vyMpgGFSpHW5wLgZqP0+LQO0gjrAYwnP0tnK8Lp2hKHj55DIh2+6dGImC13ehMcjNhxjyLb7XMkDWM++Wf9PcQX6VwAMxCOO5T8czsTGGmUXlBs8kln7CRENSp8vhTZjiDbowFJ1GxDvlkPolE4okYhsTMQy/se2/ceRunb/ZeCKOyC+FgA1hilv2fr55OfzdAHyfAeZpT27UGgOFccjhiOjihNbFz63MuFn9ogqlP7gn58zWH3hPK//ReCKGyD+Dedb/4477Gz2p9F0nfd/B8KorDQTdGEsD4IIQ4XI9vMTdLfCq/b5yCcsTA77m7bBsSz3Atx9oyxdYtpGvN+iPgDjTVKT/eeuQ+9xih9FrILHMYHUZjn+/QJ60B+PtUoRMGF5ODC1cRus8PIz7gGMRJdkG4Ose+kkQJnUBCFZxL/P2ahUfqihDHrAYzS44iNUIBJftzaJ+wuYqfMOHs5pCWxDCWOp12HOH8c5gC+N8nJsxeJk2UIonA3ZIUd0oL02+ZilL6HOAzlMvGAmLB9iffzHPKXuRRWIraUw5SC5261FxGHUl3kxcH/p8UIo/SSrIMbpccg5w5gYBCF/SEm7A9e27QQaRImIFwUhDncYctdkI8G8mXdmeyK5XBBFF5DzO0eMUq7nKhyEHrl34MQ1h5xY4Nwv6JyIQNOI2YyIxHXmu9vnItwT4d2yMq5s7SW/BT0zLArPNHeHhxEYbc6Yu8qwG3N6dhiK+IqcJOfRJzMCcIFPyXWKkaTbzUfZ5RO+q9ZFtxKfJyG5ogl/EaK+93LwSuIoQmyvYba8lvEiTJOBByL5PMCXG+UdoGQ5uJZ4lj4gTnifL/XSEkNLwOXIwT6eDqhDPCmUXp0pYNa7f9le7trjjjGvKjSzj0MIj8/ZKZXLswIH0T14Gjo4pgHSGi2WlhJvgv8PK/sC/GzjdL/rOK4joYOdcRCs9LU8kI8iDCTkxAXwEWI02aAfT6VWCxUC46GGp+wcnMtsmAYomrthOR9OHxCy/yzydFQmyObb6K52ELx/A1FdRhVEupawplTiJfITyu6iQr+fZsVdci+bIlt6GMMko2aQ0yYFofLCW7J7ehwdukm1UOObMnMXzpU4x9EX0j4zOOjlHYb7O//Mgff+TzSFOUPXaGm+8ThnyFnbSGxrlWIgYiTdD2QyWHZAhiCuC9WUDwXGcSvsj8IYf+XW7EOCWIPKdXwS4Zp/wUfu3FbcHVd1gAAAABJRU5ErkJggg=="/>
+                              </pattern>
+                            </defs>
+                            <rect id="expert_professor" width="100" height="156" fill="url(#pattern)"/>
+                          </svg>
+                          
+                        <div class="card-body">
+                            <h5 class="card-title">100% Commitment</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="156" viewBox="0 0 105 156">
+                            <defs>
+                              <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 56 84">
+                                <image width="56" height="84" xlink:href="data:image/png;base64,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"/>
+                              </pattern>
+                            </defs>
+                            <rect id="trusted_certification" width="105" height="156" fill="url(#pattern)"/>
+                          </svg>                                                  
+                        <div class="card-body">
+                            <h5 class="card-title">Focus on long-term results</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="157" height="157" viewBox="0 0 157 157">
+                            <image id="scientific_research" width="157" height="157" xlink:href="data:image/png;base64,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"/>
+                          </svg>                          
+                        <div class="card-body">
+                            <h5 class="card-title">Enrichment</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119" height="156" viewBox="0 0 119 156">
+                            <image id="online_test" width="119" height="156" xlink:href="data:image/png;base64,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"/>
+                          </svg>
+                                                   
+                        <div class="card-body">
+                            <h5 class="card-title">Teamwork</h5>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row rowCta">
+                <div class="col">
+                    <h3>Speak to us for more information</h3>
+                    <span class="btn btn-primary">Click Here</span>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+            <h2 class="faq-title">FAQ</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="svgBck">                    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Why Repeater/Long-term course?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <p>To improve the chances of getting admissions in top medical colleges, NEET repeater/long-term course is a necessity. One can perform greatly in the competitive exams with the guidance they get from our repeater course.</p>
+                                    <p>For engineering competitive exams like JEE, one should study with a systematic pattern of syllabus. Extensive learning and interactive classes can play an important role in cracking the exams easily.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    Why Choose Sri Narayana?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    What makes our faculty different?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header " id="panelsStayOpen-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseFour">
+                                    How can I clear my doubts at Sri Narayana?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFour">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header " id="panelsStayOpen-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseFive">
+                                    Do you have a hostel facility? 
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingFive">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Our students come from every country in the world</h3>
+                    <span class="btn btn-primary">Speak to us</span>
+                </div>
+            </div>
+
+        </div>
+        </section>
+        <section class="copyright">
+            <div class="container">
+                <span class="cpy">© 2021, Srinarayana. All rights reserved.</span>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
